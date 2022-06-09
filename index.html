@@ -9,6 +9,7 @@
         type = "image/x-icon"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body id="home">
       <!-- Nav Bar -->
@@ -47,14 +48,14 @@
     </section>
       <!-- About -->
       <section id="aboutme" style="background-color:#0099ff;">
-        <div class="container text-white" >
+        <div class="container text-white">
             <div class="row text-center">
-                <div class="col mb-3">
+                <div class="col mb-5" data-aos="fade-up" data-aos-delay="100">
                     <h2>About Me</h2>
                 </div>
             </div>
             <div class="row justify-content-center fs-5 text-center">
-                <div class="col-md-8">
+                <div class="col-md-8" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, perspiciatis eaque neque exercitationem veritatis praesentium accusantium id libero tempore modi nesciunt fuga laudantium! Velit similique, vero dignissimos ratione tempora dolorem mollitia eveniet hic, perspiciatis saepe, veniam labore magnam atque molestias ex sit magni dolorum voluptas nisi fugiat esse nostrum ab!</p>
                 </div>
             </div>
@@ -65,39 +66,39 @@
       <section id="myskills">
         <div class="container">
             <div class="row text-center">
-                <div class="col mb-3">
+                <div class="col mb-5" data-aos="fade-up" data-aos-delay="100">
                     <h2>Skills & Tools</h2>
                 </div>
             </div>
             <div class="col d-flex justify-content-center">
                 <div class="row mb-3">
                     <div class="col-3">
-                        <img src="img/dart.png" width="70" class="img-thumbnail bg-transparent border-0" alt="img1">
+                        <img src="img/dart.png" width="70" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="700" class="img-thumbnail bg-transparent border-0" alt="img1">
                     </div>
                     <div class="col-3">
-                        <img src="img/flutter.png" width="70" class="img-thumbnail bg-transparent border-0" alt="img1">
+                        <img src="img/flutter.png" width="70" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" class="img-thumbnail bg-transparent border-0" alt="img1">
                     </div>
                     <div class="col-3">
-                        <img src="img/java.png" width="60" class="img-thumbnail bg-transparent border-0" alt="img1">
+                        <img src="img/java.png" width="60" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" class="img-thumbnail bg-transparent border-0" alt="img1">
                     </div>
                     <div class="col-3">
-                        <img src="img/android.png" width="65" class="img-thumbnail bg-transparent border-0" alt="img1">
+                        <img src="img/android.png" width="65" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="700" class="img-thumbnail bg-transparent border-0" alt="img1">
                     </div>
                 </div>
             </div>
             <div class="col d-flex justify-content-center">
                 <div class="row mb-3">
                     <div class="col-3">
-                        <img src="img/figma.png" width="45" class="img-thumbnail bg-transparent border-0" alt="img1">
+                        <img src="img/figma.png" width="45" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="700" class="img-thumbnail bg-transparent border-0" alt="img1">
                     </div>
                     <div class="col-3">
-                        <img src="img/ps.png" width="60" class="img-thumbnail bg-transparent border-0" alt="img1">
+                        <img src="img/ps.png" width="60" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" class="img-thumbnail bg-transparent border-0" alt="img1">
                     </div>
                     <div class="col-3">
-                        <img src="img/office.png" width="60" class="img-thumbnail bg-transparent border-0" alt="img1">
+                        <img src="img/office.png" width="60" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" class="img-thumbnail bg-transparent border-0" alt="img1">
                     </div>
                     <div class="col-3">
-                        <img src="img/uml.png" width="90" class="img-thumbnail bg-transparent border-0" alt="img1">
+                        <img src="img/uml.png" width="90" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="700" class="img-thumbnail bg-transparent border-0" alt="img1">
                     </div>
                 </div>
             </div>
@@ -108,28 +109,36 @@
       <section id="projects" style="background-color:#0099ff;">
         <div class="container">
             <div class="row text-center text-white">
-                <div class="col mb-3">
+                <div class="col mb-5" data-aos="fade-up" data-aos-delay="100">
                     <h2>My Projects</h2>
                 </div>
             </div>
             <div class="col d-flex justify-content-center">
                 <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
+                    <div class="col-md-4 mb-3">
+                        <div class="card" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
                             <img src="img/por.png" class="card-img-top" alt="...">
                             <div class="card-body">
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card" >
+                    <div class="col-md-4">
+                        <div class="card" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="450">
                             <img src="img/por.png" class="card-img-top" alt="...">
                             <div class="card-body">
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                      <div class="card" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                          <img src="img/por.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -139,6 +148,10 @@
       <footer  class="text-center pb-4" style="background-color:#e2edff;">
           <p>Created with by Seka Diasnoriga Koswara</p>
       </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
