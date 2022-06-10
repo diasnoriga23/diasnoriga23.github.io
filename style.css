@@ -3,6 +3,12 @@ padding-top: 5rem;
 background-color: #151E34;
 }
 
+#home::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome browsers */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;  /* mozilla */
+}
+
 #myskills {
     background-color: #151E34;
 }
