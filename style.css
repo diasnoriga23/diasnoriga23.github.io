@@ -3,8 +3,10 @@ padding-top: 5rem;
 background-color: #151E34;
 }
 #img{
-    width: 100%;;
+    width: 100%;
 }
+
+
 #home::-webkit-scrollbar {
     display: none;  /* Safari and Chrome browsers */
     -ms-overflow-style: none; /* IE and Edge */
