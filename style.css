@@ -27,6 +27,20 @@ section {
     transform-style: preserve-3d;
 }
 
+#img-box::before{
+    content: url(img/3dflutter.png);
+    position: absolute;
+    left: 10%;
+    transform: translate3d(0,0,80px);
+}
+#img-box::after{
+    content: url(img/3dandroid.png);
+    position: absolute;
+    top: 210px;
+    right: 10%;
+    transform: translate3d(0,0,80px);
+}
+
 #flut{
     transform: translate3d(0,0,50px);
 }
