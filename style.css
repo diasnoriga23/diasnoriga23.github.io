@@ -3,7 +3,7 @@ padding-top: 5rem;
 background-color: #151E34;
 }
 #img{
-    width: 100%;
+    width: 70%;
 }
 
 
@@ -21,3 +21,13 @@ section {
     padding-top: 5rem;
     
 }
+
+#img-box{
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+#flut{
+    transform: translate3d(0,0,50px);
+}
+
