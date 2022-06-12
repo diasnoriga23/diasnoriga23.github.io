@@ -14,7 +14,7 @@
       <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top md" style="background-color: #080C24">
         <div class="container">
-          <a class="navbar-brand">Seka Diasnoriga Koswara</a>
+          <a class="navbar-brand">Seka Diasnoriga Koswara.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -60,9 +60,9 @@
                 
               </div>
               
-              <div id="img-box" data-tilt class="col-md-4 order-md-2 text-center" style="padding-top: 50px;">
+              <div id="img-box"  class="col-md-4 order-md-2 text-center" style="padding-top: 50px;">
                
-                <img id="img" data-tilt src="img/seka3.png" style="border-end-end-radius: 100px; border-end-start-radius: 100px;">
+                <img id="img"  src="img/seka3.png" style="border-end-end-radius: 100px; border-end-start-radius: 100px;">
               </div>
             </div>
           </div>          
@@ -177,5 +177,11 @@
   </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector("#img-box"), {
+		max: 25,
+		speed: 400
+	});</script>
   </body>
 </html>
