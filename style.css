@@ -1,6 +1,6 @@
 .jumbotron {
 padding-top: 5rem;
-background-color: #151E34;
+background-image: linear-gradient(to left, #0F0C29 25%, #302B63);
 }
 #img{
     width: 70%;
@@ -13,8 +13,12 @@ background-color: #151E34;
     scrollbar-width: none;  /* mozilla */
 }
 
+#aboutme{
+    background-color: #302B63;
+}
+
 #myskills {
-    background-color: #151E34;
+    background-color: #0F0C29;
 }
 
 section {
