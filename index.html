@@ -13,26 +13,26 @@
       <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top md" style="background-color: #080C24">
         <div class="container">
-          <a class="navbar-brand">Seka Diasnoriga Koswara.</a>
+          <a class="navbar-brand" id="test">Seka Diasnoriga Koswara.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#home" onclick="showMenu()">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#aboutme">About Me</a>
+                <a class="nav-link" href="#aboutme" onclick="showMenu()">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#myskills">My Skill</a>
+                <a class="nav-link" href="#myskills" onclick="showMenu()">My Skill</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#projects">Projects</a>
+                <a class="nav-link " href="#projects" onclick="showMenu()">Projects</a>
               </li>
               <li class="nav-item">
-                <a href="#myskills" class="btn btn-outline-primary text-white border-primary" type="submit">Download CV</a>
+                <a href="#myskills" class="btn btn-outline-primary text-white border-primary" type="submit" onclick="showMenu()">Download CV</a>
               </li>
             </ul>
           </div>
@@ -191,6 +191,15 @@
       backSpeed: 100,
       loop: true
     })
+
+    function showMenu() {
+      const myCollapse = document.getElementById('navbarNav')
+      const bsCollapse = new bootstrap.Collapse(myCollapse, {
+        toggle: false
+      })
+
+      bsCollapse.toggle()
+    }
   </script>
   </body>
 </html>
