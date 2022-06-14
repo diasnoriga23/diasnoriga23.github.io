@@ -198,7 +198,9 @@
         toggle: false
       })
 
-      bsCollapse.toggle()
+      if(window.screen.width < 720){
+        bsCollapse.toggle()
+      }
     }
   </script>
   </body>
