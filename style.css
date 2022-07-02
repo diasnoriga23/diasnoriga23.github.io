@@ -1,6 +1,7 @@
 .jumbotron {
 padding-top: 5rem;
-background-image: linear-gradient(to left, #0F0C29 25%, #302B63);
+background-color: #7769FF;
+
 }
 #img{
     width: 70%;
@@ -13,12 +14,23 @@ background-image: linear-gradient(to left, #0F0C29 25%, #302B63);
     scrollbar-width: none;  /* mozilla */
 }
 
+.navbar{
+    background-color: #584CDB;
+}
 #aboutme{
-    background-color: #302B63;
+    background-color: #584CDB;
+    padding-bottom: 80px;
 }
 
 #myskills {
-    background-color: #0F0C29;
+    background-color: #7769FF;
+    padding-bottom: 80px;
+}
+.card-body {
+    background-color: #584CDB;
+}
+#projects {
+    background-color: #584CDB;
 }
 
 section {
