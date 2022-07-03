@@ -33,10 +33,16 @@ background-color: #7769FF;
     background-color: #584CDB;
 }
 
+.i{
+    width: 360px;
+    height: 240px;
+}
+
 section {
     padding-top: 5rem;
     
 }
+
 
 #img-box{
     position: relative;
