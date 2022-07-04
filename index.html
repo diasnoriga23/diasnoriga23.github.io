@@ -13,7 +13,7 @@
       <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top md" >
         <div class="container">
-          <a class="navbar-brand fw-bolder" href="#home" style="color: #4A5AC0; font-weight: 600px;">
+          <a class="nav-link fw-bolder disabled" style="color: #4A5AC0; font-weight: 600px; font-size: 22px;">
             Seka.
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#home" onclick="showMenu()">Home</a>
+                <a class="nav-link active" href="#home" onclick="showMenu()">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#aboutme" onclick="showMenu()">About Me</a>
@@ -31,7 +31,7 @@
                 <a class="nav-link" href="#myskills" onclick="showMenu()">My Skill</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#projects" onclick="showMenu()">Projects</a>
+                <a class="nav-link" style="margin-right: 10px;" href="#projects" onclick="showMenu()">Projects</a>
               </li>
               <li class="nav-item">
                 <a href="doc/seka.pdf" class="btn btn-outline-primary text-white border-primary bg-primary shadow-sm" type="submit" onclick="showMenu()">Download CV</a>
@@ -46,8 +46,8 @@
           <div class="container" style="margin-bottom:80px;">
             <div class="row">
               <div id="text" class="col-md-8 order-1" style="padding-top: 50px;">
-                <p class="fw-semibold" style="font-size: 70px; color: #222231; margin-left: -4px;">Hello</p>
-                <p class="fw-semibold mb-2" style="font-size: 30px; color: #EDEDED; margin-top: -35px;">I'm, <span class="text1"></span></p>
+                <p class="fw-semibold" style="font-size: 80px; color: #222231; margin-left: -4px;">Hello</p>
+                <p class="fw-semibold mb-2" style="font-size: 30px; color: #EDEDED; margin-top: -40px;">I'm, <span class="text1"></span></p>
                 <p class="fw-normal mb-2" style="font-size: 18px; color: #B4B3B8; margin-top: -10px;">Flutter Developer | Technical Writer</p>
                 <p class="fw-normal" style="font-size: 18px; color: #B4B3B8; margin-top: -10px;">1 Years experience in Makerindo</p>
                 <a href="mailto:diasnorigakoswaraseka@gmail.com" type="button" class="btn btn-primary shadow mb-2">Let's Talk</a>
@@ -203,6 +203,12 @@
         bsCollapse.toggle()
       }
     }
+  </script>
+  <script type="text/javascript">
+    window.addEventListener('hashchange', function(){
+      document.querySelector('.active').classList.remove('active');
+      document.querySelector('[href="'+window.location.hash+'"]').classList.add('active');
+    });
   </script>
   </body>
 </html>

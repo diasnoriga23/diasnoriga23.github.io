@@ -16,8 +16,21 @@ background-color: #090A1A;
 
 .navbar{
     background-color: #111430;
-
 }
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #171B3C;
+    color: #4A5AC0;   
+  }
+.navbar .active {
+    background-color: #171B3C !important;
+    color: #4A5AC0 !important;   
+  }
+
+
+
+
+
 #aboutme{
     background-color: #090A1A;
     padding-bottom: 80px;
