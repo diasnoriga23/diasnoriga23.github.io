@@ -1,6 +1,6 @@
 .jumbotron {
 padding-top: 5rem;
-background-color: #7769FF;
+background-color: #090A1A;
 
 }
 #img{
@@ -15,22 +15,23 @@ background-color: #7769FF;
 }
 
 .navbar{
-    background-color: #584CDB;
+    background-color: #111430;
+
 }
 #aboutme{
-    background-color: #584CDB;
+    background-color: #090A1A;
     padding-bottom: 80px;
 }
 
 #myskills {
-    background-color: #7769FF;
+    background-color: #090A1A;
     padding-bottom: 80px;
 }
 .card-body {
-    background-color: #584CDB;
+    background-color: #090A1A;
 }
 #projects {
-    background-color: #584CDB;
+    background-color: #090A1A;
 }
 
 .i{
