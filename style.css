@@ -7,7 +7,6 @@ background-color: #090A1A;
     width: 70%;
 }
 
-
 #home::-webkit-scrollbar {
     display: none;  /* Safari and Chrome browsers */
     -ms-overflow-style: none; /* IE and Edge */
@@ -57,22 +56,16 @@ section {
     
 }
 
+@media only screen and (max-width: 760px) {
+    .aa {margin-top: -30px;}
+  } 
+@media only screen and (max-width: 760px) {
+    .profil {margin-top: 10px;}
+  } 
 
-#img-box{
-    position: relative;
-    transform-style: preserve-3d;
-}
-
-#img-box::before{
-    content: url(img/3dflutter.png);
-    position: absolute;
-    left: 10%;
-    transform: translate3d(0,0,80px);
-}
-#img-box::after{
-    content: url(img/3dandroid.png);
-    position: absolute;
-    top: 210px;
-    right: 10%;
-    transform: translate3d(0,0,80px);
-}
+@media only screen and (min-width: 761px) {
+    .aa {margin-top: 50px;}
+  } 
+@media only screen and (min-width: 761px) {
+    .profil {margin-top: 30px;}
+  } 
