@@ -26,10 +26,6 @@ background-color: #090A1A;
     color: #4A5AC0 !important;   
   }
 
-
-
-
-
 #aboutme{
     background-color: #090A1A;
     padding-bottom: 80px;
@@ -40,7 +36,8 @@ background-color: #090A1A;
     padding-bottom: 80px;
 }
 .card-body {
-    background-color: #090A1A;
+    background-color: #171B3C;
+    padding: 10px !important;
 }
 #projects {
     background-color: #090A1A;
