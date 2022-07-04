@@ -57,7 +57,7 @@ section {
 }
 
 @media only screen and (max-width: 760px) {
-    .aa {margin-top: -30px;}
+    .judul {margin-top: -30px;}
   } 
 @media only screen and (max-width: 760px) {
     .profil {margin-top: 10px;}
@@ -67,12 +67,14 @@ section {
         background-color: #171B3C !important;
         color: #4A5AC0 !important;
         width: 455px;
-      }
-    
+      } 
   } 
 
+
+  /* aa */
+
 @media only screen and (min-width: 761px) {
-    .aa {margin-top: 50px;}
+    .judul {margin-top: 50px;}
   } 
 @media only screen and (min-width: 761px) {
     .profil {margin-top: 30px;}
