@@ -53,7 +53,6 @@ background-color: #090A1A;
 
 section {
     padding-top: 5rem;
-    
 }
 
 @media only screen and (max-width: 760px) {
@@ -66,7 +65,7 @@ section {
     .navbar .active {
         background-color: #171B3C !important;
         color: #4A5AC0 !important;
-        width: 45px;
+        width: 455px !important; 
       } 
   } 
 
