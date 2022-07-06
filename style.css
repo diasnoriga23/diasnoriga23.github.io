@@ -71,6 +71,11 @@ section {
         width: 100% !important; 
       } 
   } 
+@media only screen and (max-width: 760px) {
+    .tjudul {
+        font-size: 50px !important; 
+      } 
+  } 
 
 
   /* aa */
@@ -82,8 +87,12 @@ section {
     .profil {margin-top: 30px;}
   } 
 @media only screen and (min-width: 761px) {
-    .carousel {
-        
+    .carousel { 
         width: 50% !important; 
+      } 
+  } 
+@media only screen and (min-width: 761px) {
+    .tjudul {
+        font-size: 70px !important; 
       } 
   } 
