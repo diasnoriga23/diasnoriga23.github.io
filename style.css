@@ -65,6 +65,12 @@ section {
         width: 455px !important; 
       } 
   } 
+@media only screen and (max-width: 760px) {
+    .carousel {
+        
+        width: 100% !important; 
+      } 
+  } 
 
 
   /* aa */
@@ -74,4 +80,10 @@ section {
   } 
 @media only screen and (min-width: 761px) {
     .profil {margin-top: 30px;}
+  } 
+@media only screen and (min-width: 761px) {
+    .carousel {
+        
+        width: 50% !important; 
+      } 
   } 
