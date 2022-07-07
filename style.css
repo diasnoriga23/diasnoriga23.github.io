@@ -53,7 +53,7 @@ section {
 }
 
 @media only screen and (max-width: 760px) {
-    .judul {margin-top: -30px;}
+    .judul {margin-top: -20px;}
   } 
 @media only screen and (max-width: 760px) {
     .profil {margin-top: 10px;}
@@ -94,6 +94,11 @@ section {
 @media only screen and (max-width: 760px) {
     .navmm {
         margin-bottom: 10px !important;
+      } 
+  }  
+@media only screen and (max-width: 760px) {
+    .navbar-toggler {
+        color:  #171B3C !important;
       } 
   }  
 
