@@ -62,12 +62,17 @@ section {
     .navbar .active {
         background-color: #171B3C !important;
         color: #4A5AC0 !important;
-        width: 455px !important; 
+        border-radius: 6px;
       } 
   } 
 @media only screen and (max-width: 760px) {
+    .navbar {
+        text-align: center;
+      } 
+  } 
+
+@media only screen and (max-width: 760px) {
     .carousel {
-        
         width: 100% !important; 
       } 
   } 
@@ -76,6 +81,16 @@ section {
         font-size: 50px !important; 
       } 
   } 
+@media only screen and (max-width: 760px) {
+    .twrite {
+        font-size: 30px !important;
+      } 
+  } 
+@media only screen and (max-width: 760px) {
+    .navm {
+        margin-top: 20px !important;
+      } 
+  }  
 
 
   /* aa */
@@ -95,4 +110,26 @@ section {
     .tjudul {
         font-size: 70px !important; 
       } 
+  } 
+@media only screen and (min-width: 761px) {
+    .twrite {
+        font-size: 50px !important; 
+      } 
+  } 
+@media only screen and (min-width: 761px) {
+    .navp {
+        margin-right: 15px !important; 
+      } 
+  } 
+@media only screen and (min-width: 761px) {
+    .navbar .active {
+        border-radius: 6px;
+      } 
+  } 
+@media only screen and (min-width: 761px) {
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #171B3C;
+    color: #4A5AC0;  
+    border-radius: 6px; 
+  }
   } 
