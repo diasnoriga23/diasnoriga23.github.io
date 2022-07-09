@@ -7,6 +7,7 @@ background-color: #090A1A;
     width: 70%;
 }
 
+
 #home::-webkit-scrollbar {
     display: none;  /* Safari and Chrome browsers */
     -ms-overflow-style: none; /* IE and Edge */
@@ -101,6 +102,11 @@ section {
         color:  #171B3C !important;
       } 
   }  
+@media only screen and (max-width: 760px) {
+  #projects {
+    padding-bottom: 150px;
+}
+  }  
 
 
   /* aa */
@@ -142,4 +148,19 @@ section {
     color: #4A5AC0;  
     border-radius: 6px; 
   }
+  } 
+@media only screen and (min-width: 761px) {
+  #projects {
+    padding-bottom: 50px;
+}
+  } 
+@media only screen and (min-width: 761px) {
+  .carousel-inner{
+    width: 70%;
+    margin-left: 82px;
+    justify-content: center !important;
+}
+.slidee{
+    height: 390px;
+}
   } 
