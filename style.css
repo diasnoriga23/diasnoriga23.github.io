@@ -106,8 +106,7 @@ section {
   #projects {
     padding-bottom: 150px;
 }
-  }  
-
+}
 
   /* aa */
 
@@ -117,9 +116,10 @@ section {
 @media only screen and (min-width: 761px) {
     .profil {margin-top: 30px;}
   } 
-@media only screen and (min-width: 761px) {
+@media only screen and (min-width: 1200) {
     .carousel { 
         width: 50% !important; 
+        
       } 
   } 
 @media only screen and (min-width: 761px) {
@@ -154,13 +154,13 @@ section {
     padding-bottom: 50px;
 }
   } 
-@media only screen and (min-width: 761px) {
+@media only screen and (min-width: 1200px) {
   .carousel-inner{
-    width: 70%;
-    margin-left: 82px;
+    width: 50% !important;
+    margin-left: 320px;
     justify-content: center !important;
 }
-.slidee{
+/* .slidee{
     height: 390px;
-}
+} */
   } 
