@@ -118,7 +118,7 @@ section {
   } 
 @media only screen and (min-width: 1200) {
     .carousel { 
-        width: 50% !important; 
+        width: 70% !important; 
         
       } 
   } 
@@ -156,8 +156,8 @@ section {
   } 
 @media only screen and (min-width: 1200px) {
   .carousel-inner{
-    width: 50% !important;
-    margin-left: 320px;
+    width: 70% !important;
+    margin-left: 190px;
     justify-content: center !important;
 }
 /* .slidee{
