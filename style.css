@@ -54,10 +54,16 @@ section {
 }
 
 @media only screen and (max-width: 760px) {
-    .judul {margin-top: -20px;}
+    .judul {margin-top: -5px;
+      text-align: center;
+    }
   } 
 @media only screen and (max-width: 760px) {
     .profil {margin-top: 10px;}
+  } 
+  @media only screen and (max-width: 760px) {
+    .pto {width: 290px;
+    }
   } 
 @media only screen and (max-width: 760px) {
     .navbar .active {
@@ -111,10 +117,17 @@ section {
   /* aa */
 
 @media only screen and (min-width: 761px) {
-    .judul {margin-top: 50px;}
+    .judul {margin-top: 150px;}
   } 
 @media only screen and (min-width: 761px) {
-    .profil {margin-top: 30px;}
+    .profil {margin-top: 30px;
+      
+    }
+  } 
+@media only screen and (min-width: 761px) {
+    .pto {width: 400px;
+      
+    }
   } 
 @media only screen and (min-width: 1200) {
     .carousel { 
