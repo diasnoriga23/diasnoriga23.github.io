@@ -3,6 +3,37 @@ padding-top: 5rem;
 background-color: #090A1A;
 
 }
+
+.carousel-inner {
+  padding: 50px;
+}
+
+.carousel-item {
+  padding: 20px; /* Contoh padding, bisa disesuaikan */
+}
+
+.carousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #eee;
+  padding: 0;
+  margin: 0 5px;
+}
+
+.custom-footer {
+  background-color: #121430; /* Warna latar belakang */
+  color: #ededed; /* Warna teks */
+  padding: 20px 0; /* Padding atas dan bawah */
+  /* position: fixed; Membuat footer tetap di bagian bawah */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Lebar penuh layar */
+  text-align: center; /* Teks berada di tengah */
+}
+
+
+
 #img{
     width: 70%;
 }
