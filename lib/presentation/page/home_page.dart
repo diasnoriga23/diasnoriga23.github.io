@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 )
                 : SingleChildScrollView(
                   controller: _scrollController,
-                  physics: BouncingScrollPhysics(),
+                  physics: ClampingScrollPhysics(),
                   // padding: EdgeInsets.symmetric(vertical: 50),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,

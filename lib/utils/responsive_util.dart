@@ -22,10 +22,12 @@ extension ResponsiveUtil on BuildContext {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
       return 45;
-    } else if (bp.isTablet) {
-      return 70;
-    } else if (bp.isDesktop) {
+    } else if (bp.isMobile) {
       return 55;
+    } else if (bp.isTablet) {
+      return 60;
+    } else if (bp.isDesktop) {
+      return 70;
     } else {
       return 70;
     }
@@ -34,6 +36,8 @@ extension ResponsiveUtil on BuildContext {
   double get fontSizeSubTitle {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
+      return 16;
+    } else if (bp.isMobile) {
       return 16;
     } else if (bp.isTablet) {
       return 20;
@@ -48,6 +52,8 @@ extension ResponsiveUtil on BuildContext {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
       return 26;
+    } else if (bp.isMobile) {
+      return 30;
     } else if (bp.isTablet) {
       return 34;
     } else if (bp.isDesktop) {
@@ -60,11 +66,13 @@ extension ResponsiveUtil on BuildContext {
   double get fontButtonSize {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
-      return 16;
+      return 18;
+    } else if (bp.isMobile) {
+      return 18;
     } else if (bp.isTablet) {
       return 18;
     } else if (bp.isDesktop) {
-      return 18;
+      return 20;
     } else {
       return 20;
     }
@@ -74,6 +82,8 @@ extension ResponsiveUtil on BuildContext {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
       return 30;
+    } else if (bp.isMobile) {
+      return 35;
     } else if (bp.isTablet) {
       return 50;
     } else if (bp.isDesktop) {
@@ -102,6 +112,8 @@ extension ResponsiveUtil on BuildContext {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
       return 18;
+    } else if (bp.isMobile) {
+      return 18;
     } else if (bp.isTablet) {
       return 20;
     } else if (bp.isDesktop) {
@@ -119,6 +131,8 @@ extension ResponsiveUtil on BuildContext {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
       return 110;
+    } else if (bp.isMobile) {
+      return 110;
     } else if (bp.isTablet) {
       return 120;
     } else if (bp.isDesktop) {
@@ -132,6 +146,8 @@ extension ResponsiveUtil on BuildContext {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
       return 30;
+    } else if (bp.isMobile) {
+      return 35;
     } else if (bp.isTablet) {
       return 40;
     } else if (bp.isDesktop) {
