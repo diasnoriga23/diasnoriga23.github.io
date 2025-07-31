@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Persib Apps",
+    "image": "assets/project/persib.png",
+    "description": "Aplikasi ini adalah platform untuk Bobotoh yang dibangun dengan Flutter dan Bloc. Menyediakan fitur pembelian tiket, membership, dan merchandise.",
+    "playStore": "https://play.google.com/store/apps/details?id=com.persib.persibpass&hl=id",
+    "appStore": "https://apps.apple.com/id/app/persib/id1240095475?l=id"
+  },
+  {
+    "title": "Singabret",
+    "image": "assets/project/singabret.png",
+    "description": "Platform presensi digital untuk PNS Kab. Subang, dibuat dengan Flutter & Provider. Pengembangan dari apps Sijawara",
+    "playStore": "https://play.google.com/store/apps/details?id=id.go.subang.sijawara&hl=en",
+    "appStore": ""
+  },
+  {
+    "title": "Sijawara",
+    "image": "assets/project/sijawara.png",
+    "description": "Platform presensi digital untuk PNS Kab. Subang, dibuat dengan Flutter & Provider. Fitur: presensi lokasi, validasi bawahan, TPP, dan histori kehadiran.",
+    "playStore": "https://play.google.com/store/apps/details?id=id.go.subang.sijawara&hl=en",
+    "appStore": ""
+  },
+  {
+    "title": "e-Presensi Dewan Kab. Subang",
+    "image": "assets/project/dewan.png",
+    "description": "Aplikasi mobile untuk Dewan Kab. Subang berbasis Flutter, menyediakan fitur presensi dinas luar, titik koordinat, histori kehadiran, dan jadwal kegiatan.",
+    "playStore": "https://play.google.com/store/apps/details?id=com.setwan.presensi_dewan",
+    "appStore": ""
+  }, 
+  {
+    "title": "SwivERP",
+    "image": "assets/project/dummy.png",
+    "description": "Platform presensi digital untuk internal SwivERP, dibuat dengan Flutter & Provider. Fitur: presensi, pemilihan shift, notifikasi dengan websoket pusher, dan webview.",
+    "playStore": "",
+    "appStore": ""
+  }, 
+  {
+    "title": "ASICS Helpdesk",
+    "image": "assets/project/dummy.png",
+    "description": "Aplikasi ini adalah platform untuk internal ASICS yang dibangun dengan Flutter dan Provider. Menyediakan fitur tiket keluhan, feedback tiket.",
+    "playStore": "",
+    "appStore": ""
+  }, 
+  {
+    "title": "Super App Makerindo",
+    "image": "assets/project/makerindo.png",
+    "description": "Aplikasi mobile berbasis Flutter untuk karyawan Makerindo, mencakup task list, absensi, sistem poin, dan rekapitulasi performa karyawan.",
+    "playStore": "https://play.google.com/store/apps/details?id=com.makerindo.makerindoapp&hl=id",
+    "appStore": ""
+  }, 
+  {
+    "title": "RT-RW Cerdas Warga",
+    "image": "assets/project/warga.png",
+    "description": "Aplikasi berbasis Flutter untuk membantu pengelolaan aktivitas dan informasi warga, termasuk data warga, pengurus RT/RW, jadwal kegiatan, pengumuman, dan pengaduan.",
+    "playStore": "https://play.google.com/store/apps/details?id=com.makerindo.app_rt",
+    "appStore": ""
+  },
+  {
+    "title": "RT-RW Cerdas RT",
+    "image": "assets/project/rt.png",
+    "description": "Aplikasi Flutter untuk mencatat pemasukan dan pengeluaran, serta mengelola laporan keuangan warga, usulan, jadwal rapat, pengumuman, dan administrasi RT.",
+    "playStore": "https://play.google.com/store/apps/details?id=com.makerindo.rtrw_cerdas_rt",
+    "appStore": ""
+  },
+  {
+    "title": "Ferads",
+    "image": "assets/project/ferad.png",
+    "description": "Aplikasi rekomendasi pemupukan berbasis Flutter untuk petani dan penghobi tanaman, didukung rumus dari pakar pertanian.",
+    "playStore": "https://play.google.com/store/apps/details?id=com.makerindo.ferads_v3&hl=id",
+    "appStore": ""
+  },
+  {
+    "title": "EM UB Apps",
+    "image": "assets/project/emub.png",
+    "description": "Aplikasi ini untuk Universitas Brawijaya yang dirancang khusus bagi mahasiswa baru, menyediakan fitur-fitur pendukung orientasi dan informasi kampus.",
+    "playStore": "https://play.google.com/store/apps/details?id=com.emub.apps2023&hl=en-ID",
+    "appStore": "https://apps.apple.com/id/app/em-ub-apps/id6455990035"
+  },
+  {
+    "title": "WQMCS",
+    "image": "assets/project/wqmcs.png",
+    "description": "Water Quality Monitoring Control System adalah aplikasi untuk memantau dan mengelola kualitas air secara efisien, dengan fitur monitoring real-time, aktivasi node, dan pemeliharaan node.",
+    "playStore": "https://play.google.com/store/apps/details?id=com.makerindo.water_quality_control_system",
+    "appStore": ""
+  },
+  {
+    "title": "Seller Teh Ibu",
+    "image": "assets/project/tehibu.png",
+    "description": "Aplikasi khusus bagi penjual Teh Ibu terdaftar, dilengkapi fitur absensi (buka toko), pencatatan penjualan, dan laporan, serta terintegrasi dengan Odoo ERP.",
+    "playStore": "https://play.google.com/store/apps/details?id=com.tehibu.seller",
+    "appStore": ""
+  }
+]
