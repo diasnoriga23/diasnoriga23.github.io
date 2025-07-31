@@ -29,14 +29,14 @@
   }, 
   {
     "title": "SwivERP",
-    "image": "assets/project/dummy.png",
+    "image": "",
     "description": "Platform presensi digital untuk internal SwivERP, dibuat dengan Flutter & Provider. Fitur: presensi, pemilihan shift, notifikasi dengan websoket pusher, dan webview.",
     "playStore": "",
     "appStore": ""
   }, 
   {
     "title": "ASICS Helpdesk",
-    "image": "assets/project/dummy.png",
+    "image": "",
     "description": "Aplikasi ini adalah platform untuk internal ASICS yang dibangun dengan Flutter dan Provider. Menyediakan fitur tiket keluhan, feedback tiket.",
     "playStore": "",
     "appStore": ""

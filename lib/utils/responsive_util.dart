@@ -9,6 +9,8 @@ extension ResponsiveUtil on BuildContext {
       return 1;
     } else if (bp.isTablet) {
       return 2;
+    } else if (bp.isDesktop) {
+      return 3;
     } else {
       return 3;
     }
@@ -20,6 +22,8 @@ extension ResponsiveUtil on BuildContext {
       return 45;
     } else if (bp.isTablet) {
       return 70;
+    } else if (bp.isDesktop) {
+      return 55;
     } else {
       return 70;
     }
@@ -30,6 +34,8 @@ extension ResponsiveUtil on BuildContext {
     if (bp.isMobile) {
       return 16;
     } else if (bp.isTablet) {
+      return 20;
+    } else if (bp.isDesktop) {
       return 20;
     } else {
       return 20;
@@ -42,6 +48,8 @@ extension ResponsiveUtil on BuildContext {
       return 26;
     } else if (bp.isTablet) {
       return 34;
+    } else if (bp.isDesktop) {
+      return 34;
     } else {
       return 34;
     }
@@ -50,11 +58,13 @@ extension ResponsiveUtil on BuildContext {
   double get fontButtonSize {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isMobile) {
-      return 20;
+      return 16;
     } else if (bp.isTablet) {
-      return 24;
+      return 18;
+    } else if (bp.isDesktop) {
+      return 18;
     } else {
-      return 24;
+      return 20;
     }
   }
 
@@ -63,6 +73,8 @@ extension ResponsiveUtil on BuildContext {
     if (bp.isMobile) {
       return 20;
     } else if (bp.isTablet) {
+      return 40;
+    } else if (bp.isDesktop) {
       return 40;
     } else {
       return 50;
@@ -75,8 +87,36 @@ extension ResponsiveUtil on BuildContext {
       return 20;
     } else if (bp.isTablet) {
       return 50;
+    } else if (bp.isDesktop) {
+      return 100;
     } else {
       return 150;
+    }
+  }
+
+  double get sizeImageMarquee {
+    final bp = ResponsiveBreakpoints.of(this);
+    if (bp.isMobile) {
+      return 110;
+    } else if (bp.isTablet) {
+      return 120;
+    } else if (bp.isDesktop) {
+      return 130;
+    } else {
+      return 140;
+    }
+  }
+
+  double get sizeImagePlayAppstore {
+    final bp = ResponsiveBreakpoints.of(this);
+    if (bp.isMobile) {
+      return 30;
+    } else if (bp.isTablet) {
+      return 40;
+    } else if (bp.isDesktop) {
+      return 40;
+    } else {
+      return 40;
     }
   }
 

@@ -104,7 +104,7 @@ class _PortfolioPageState extends State<PortfolioPage>
     "Based in Sumedang",
   ];
   Widget _buildMyPortofolio(BuildContext context) {
-    final limitedItems = (portfolioItems).take(3).toList();
+    final limitedItems = (portfolioItems).toList();
 
     if (limitedItems.isEmpty) {
       return const Center(child: CircularProgressIndicator());
@@ -146,8 +146,14 @@ class _PortfolioPageState extends State<PortfolioPage>
                       child: Container(
                         color: context.colorContainerImage,
                         child: AspectRatio(
-                          aspectRatio: 16 / 9,
-                          child: Image.asset(item['image'], fit: BoxFit.cover),
+                          aspectRatio: 3 / 2,
+                          child:
+                              item['image'] == ''
+                                  ? SizedBox()
+                                  : Image.asset(
+                                    item['image'],
+                                    fit: BoxFit.cover,
+                                  ),
                         ),
                       ),
                     ),
@@ -179,74 +185,44 @@ class _PortfolioPageState extends State<PortfolioPage>
                             spacing: 16,
                             runSpacing: 16,
                             children: [
-                              if (item['playStore'] != '')
-                                InkWell(
-                                  onTap: () async {
-                                    final uri = Uri.parse(item['playStore']);
-                                    if (await canLaunchUrl(uri)) {
-                                      await launchUrl(
-                                        uri,
-                                        mode: LaunchMode.externalApplication,
-                                      );
-                                    }
-                                  },
-                                  child: Image.asset(
-                                    'assets/playstore.png',
-                                    height:
-                                        ResponsiveValue<double>(
-                                          context,
-                                          defaultValue: 30,
-                                          conditionalValues: const [
-                                            Condition.largerThan(
-                                              name: MOBILE,
-                                              value: 35,
-                                            ),
-                                            Condition.largerThan(
-                                              name: TABLET,
-                                              value: 40,
-                                            ),
-                                            Condition.largerThan(
-                                              name: DESKTOP,
-                                              value: 40,
-                                            ),
-                                          ],
-                                        ).value,
+                              item['playStore'] == ''
+                                  ? SizedBox(
+                                    height: context.sizeImagePlayAppstore,
+                                  )
+                                  : InkWell(
+                                    onTap: () async {
+                                      final uri = Uri.parse(item['playStore']);
+                                      if (await canLaunchUrl(uri)) {
+                                        await launchUrl(
+                                          uri,
+                                          mode: LaunchMode.externalApplication,
+                                        );
+                                      }
+                                    },
+                                    child: Image.asset(
+                                      'assets/playstore.png',
+                                      height: context.sizeImagePlayAppstore,
+                                    ),
                                   ),
-                                ),
-                              if (item['appStore'] != '')
-                                InkWell(
-                                  onTap: () async {
-                                    final uri = Uri.parse(item['appStore']);
-                                    if (await canLaunchUrl(uri)) {
-                                      await launchUrl(
-                                        uri,
-                                        mode: LaunchMode.externalApplication,
-                                      );
-                                    }
-                                  },
-                                  child: Image.asset(
-                                    'assets/appstore.png',
-                                    height:
-                                        ResponsiveValue<double>(
-                                          context,
-                                          defaultValue: 30,
-                                          conditionalValues: const [
-                                            Condition.largerThan(
-                                              name: MOBILE,
-                                              value: 35,
-                                            ),
-                                            Condition.largerThan(
-                                              name: TABLET,
-                                              value: 40,
-                                            ),
-                                            Condition.largerThan(
-                                              name: DESKTOP,
-                                              value: 40,
-                                            ),
-                                          ],
-                                        ).value,
+                              item['appStore'] == ''
+                                  ? SizedBox(
+                                    height: context.sizeImagePlayAppstore,
+                                  )
+                                  : InkWell(
+                                    onTap: () async {
+                                      final uri = Uri.parse(item['appStore']);
+                                      if (await canLaunchUrl(uri)) {
+                                        await launchUrl(
+                                          uri,
+                                          mode: LaunchMode.externalApplication,
+                                        );
+                                      }
+                                    },
+                                    child: Image.asset(
+                                      'assets/appstore.png',
+                                      height: context.sizeImagePlayAppstore,
+                                    ),
                                   ),
-                                ),
                             ],
                           ),
                         ],
@@ -291,7 +267,7 @@ class _PortfolioPageState extends State<PortfolioPage>
     );
   }
 
-  Widget _buttonCv(double subTitleSize) {
+  Widget _buttonCv() {
     return Wrap(
       spacing: 20,
       runSpacing: 20,
@@ -299,7 +275,6 @@ class _PortfolioPageState extends State<PortfolioPage>
         _customButton(
           'Download CV',
           'https://www.cake.me/seka-diasnoriga-koswara',
-          subTitleSize,
         ),
         // _customButton(
         //   "Let's Talk",
@@ -310,7 +285,7 @@ class _PortfolioPageState extends State<PortfolioPage>
     );
   }
 
-  Widget _customButton(String text, String url, double size) {
+  Widget _customButton(String text, String url) {
     return ElevatedButton(
       onPressed: () async {
         final uri = Uri.parse(url);
@@ -320,14 +295,14 @@ class _PortfolioPageState extends State<PortfolioPage>
       },
       style: ElevatedButton.styleFrom(
         backgroundColor: context.colorButton,
-        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         elevation: 0,
       ),
       child: Text(
         text,
         style: context.interTextStyle.copyWith(
-          fontSize: size,
+          fontSize: context.fontButtonSize,
           fontWeight: FontWeight.w500,
         ),
       ),
@@ -346,16 +321,7 @@ class _PortfolioPageState extends State<PortfolioPage>
         ),
         SizedBox(height: context.heihtContentTitle),
         SizedBox(
-          height:
-              ResponsiveValue<double>(
-                context,
-                defaultValue: 100,
-                conditionalValues: const [
-                  Condition.largerThan(name: MOBILE, value: 150),
-                  Condition.largerThan(name: TABLET, value: 200),
-                  Condition.largerThan(name: DESKTOP, value: 200),
-                ],
-              ).value,
+          height: context.sizeImageMarquee,
           child: InfiniteMarquee(
             scrollDirection: Axis.horizontal,
             stepOffset: -0.75,
@@ -366,16 +332,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                 item['image'],
                 fit: BoxFit.cover,
                 colorBlendMode: BlendMode.hardLight,
-                width:
-                    ResponsiveValue<double>(
-                      context,
-                      defaultValue: 100,
-                      conditionalValues: const [
-                        Condition.largerThan(name: MOBILE, value: 150),
-                        Condition.largerThan(name: TABLET, value: 200),
-                        Condition.largerThan(name: DESKTOP, value: 200),
-                      ],
-                    ).value,
+                width: context.sizeImageMarquee,
               );
             },
           ),
@@ -450,7 +407,7 @@ class _PortfolioPageState extends State<PortfolioPage>
             const SizedBox(height: 20),
             _iconSosmed(),
             const SizedBox(height: 30),
-            _buttonCv(context.fontButtonSize),
+            _buttonCv(),
           ],
         ),
       ],
@@ -490,58 +447,58 @@ class _PortfolioPageState extends State<PortfolioPage>
     );
   }
 
-  void _scrollToKey(GlobalKey key) {
-    final context = key.currentContext;
-    if (context != null) {
-      Scrollable.ensureVisible(
-        context,
-        duration: const Duration(milliseconds: 500),
-        curve: Curves.easeInOut,
-      );
-    }
-  }
+  // void _scrollToKey(GlobalKey key) {
+  //   final context = key.currentContext;
+  //   if (context != null) {
+  //     Scrollable.ensureVisible(
+  //       context,
+  //       duration: const Duration(milliseconds: 500),
+  //       curve: Curves.easeInOut,
+  //     );
+  //   }
+  // }
 
-  PreferredSizeWidget _buildNavbar() {
-    return PreferredSize(
-      preferredSize: const Size.fromHeight(kToolbarHeight),
-      child: Stack(
-        children: [
-          // Blur layer
-          Positioned.fill(
-            child: ClipRect(
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                // ignore: deprecated_member_use
-                child: Container(color: Color(0xFF222531).withOpacity(0.5)),
-              ),
-            ),
-          ),
+  // PreferredSizeWidget _buildNavbar() {
+  //   return PreferredSize(
+  //     preferredSize: const Size.fromHeight(kToolbarHeight),
+  //     child: Stack(
+  //       children: [
+  //         // Blur layer
+  //         Positioned.fill(
+  //           child: ClipRect(
+  //             child: BackdropFilter(
+  //               filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+  //               // ignore: deprecated_member_use
+  //               child: Container(color: Color(0xFF222531).withOpacity(0.5)),
+  //             ),
+  //           ),
+  //         ),
 
-          // AppBar content
-          AppBar(
-            // ignore: deprecated_member_use
-            backgroundColor: Color(0xFF222531).withOpacity(0.5),
-            elevation: 0,
-            automaticallyImplyLeading: false,
-            title: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                TextButton(
-                  onPressed: () => _scrollToKey(_helloKey),
-                  child: Text('Home', style: context.interTextStyle),
-                ),
-                TextButton(
-                  onPressed: () => _scrollToKey(_portfolioKey),
-                  child: Text(
-                    'Portfolio',
-                    style: context.interTextStyle.copyWith(color: Colors.white),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+  //         // AppBar content
+  //         AppBar(
+  //           // ignore: deprecated_member_use
+  //           backgroundColor: Color(0xFF222531).withOpacity(0.5),
+  //           elevation: 0,
+  //           automaticallyImplyLeading: false,
+  //           title: Row(
+  //             mainAxisAlignment: MainAxisAlignment.end,
+  //             children: [
+  //               TextButton(
+  //                 onPressed: () => _scrollToKey(_helloKey),
+  //                 child: Text('Home', style: context.interTextStyle),
+  //               ),
+  //               TextButton(
+  //                 onPressed: () => _scrollToKey(_portfolioKey),
+  //                 child: Text(
+  //                   'Portfolio',
+  //                   style: context.interTextStyle.copyWith(color: Colors.white),
+  //                 ),
+  //               ),
+  //             ],
+  //           ),
+  //         ),
+  //       ],
+  //     ),
+  //   );
+  // }
 }
