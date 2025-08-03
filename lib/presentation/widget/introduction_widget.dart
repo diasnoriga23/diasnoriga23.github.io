@@ -24,17 +24,17 @@ class IntroductionWidget extends StatelessWidget {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          RepaintBoundary(
-            child: IgnorePointer(
-              child: Lottie.asset(
-                'assets/animasi.json',
-                repeat: true,
-                width: 700,
-                fit: BoxFit.contain,
-                frameRate: FrameRate.max,
-              ),
-            ),
-          ),
+          // RepaintBoundary(
+          //   child: IgnorePointer(
+          //     child: Lottie.asset(
+          //       'assets/animasi.json',
+          //       repeat: true,
+          //       width: 700,
+          //       fit: BoxFit.contain,
+          //       frameRate: FrameRate.max,
+          //     ),
+          //   ),
+          // ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
