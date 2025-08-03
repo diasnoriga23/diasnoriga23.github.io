@@ -66,7 +66,7 @@ extension ResponsiveUtil on BuildContext {
   double get fontButtonSize {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
-      return 18;
+      return 16;
     } else if (bp.isMobile) {
       return 18;
     } else if (bp.isTablet) {
@@ -130,15 +130,15 @@ extension ResponsiveUtil on BuildContext {
   double get sizeImageMarquee {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
-      return 110;
+      return 80;
     } else if (bp.isMobile) {
-      return 110;
+      return 95;
     } else if (bp.isTablet) {
-      return 120;
+      return 110;
     } else if (bp.isDesktop) {
-      return 130;
+      return 120;
     } else {
-      return 140;
+      return 130;
     }
   }
 

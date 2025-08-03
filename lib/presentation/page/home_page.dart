@@ -39,7 +39,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: context.colorBackground,
-      // appBar: _buildNavbar(),
       body: AnimatedSwitcher(
         duration: const Duration(milliseconds: 300),
         child:
@@ -50,7 +49,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 : SingleChildScrollView(
                   controller: _scrollController,
                   physics: ClampingScrollPhysics(),
-                  // padding: EdgeInsets.symmetric(vertical: 50),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -66,59 +64,4 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       ),
     );
   }
-
-  // void _scrollToKey(GlobalKey key) {
-  //   final context = key.currentContext;
-  //   if (context != null) {
-  //     Scrollable.ensureVisible(
-  //       context,
-  //       duration: const Duration(milliseconds: 500),
-  //       curve: Curves.easeInOut,
-  //     );
-  //   }
-  // }
-
-  // PreferredSizeWidget _buildNavbar() {
-  //   return PreferredSize(
-  //     preferredSize: const Size.fromHeight(kToolbarHeight),
-  //     child: Stack(
-  //       children: [
-  //         // Blur layer
-  //         Positioned.fill(
-  //           child: ClipRect(
-  //             child: BackdropFilter(
-  //               filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-  //               // ignore: deprecated_member_use
-  //               child: Container(color: Color(0xFF222531).withOpacity(0.5)),
-  //             ),
-  //           ),
-  //         ),
-
-  //         // AppBar content
-  //         AppBar(
-  //           // ignore: deprecated_member_use
-  //           backgroundColor: Color(0xFF222531).withOpacity(0.5),
-  //           elevation: 0,
-  //           automaticallyImplyLeading: false,
-  //           title: Row(
-  //             mainAxisAlignment: MainAxisAlignment.end,
-  //             children: [
-  //               TextButton(
-  //                 onPressed: () => _scrollToKey(_helloKey),
-  //                 child: Text('Home', style: context.interTextStyle),
-  //               ),
-  //               TextButton(
-  //                 onPressed: () => _scrollToKey(_portfolioKey),
-  //                 child: Text(
-  //                   'Portfolio',
-  //                   style: context.interTextStyle.copyWith(color: Colors.white),
-  //                 ),
-  //               ),
-  //             ],
-  //           ),
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
 }

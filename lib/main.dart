@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
             child: BouncingScrollWrapper.builder(context, child!),
             breakpoints: [
               const Breakpoint(start: 0, end: 550, name: PHONE),
-              const Breakpoint(start: 551, end: 894, name: MOBILE),
-              const Breakpoint(start: 895, end: 1350, name: TABLET),
+              const Breakpoint(start: 551, end: 892, name: MOBILE),
+              const Breakpoint(start: 893, end: 1350, name: TABLET),
               const Breakpoint(start: 1351, end: 1439, name: DESKTOP),
               const Breakpoint(start: 1440, end: double.infinity, name: '4K'),
             ],
