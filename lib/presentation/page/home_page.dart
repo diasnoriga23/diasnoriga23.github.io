@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       MyProjectsWidget(),
                       TrustedCompanyWidget(),
                       AboutmeWidget(),
-                      FooterWidget(),
+                      // FooterWidget(),
                     ],
                   ),
                 ),
