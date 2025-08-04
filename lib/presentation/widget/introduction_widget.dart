@@ -1,6 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import 'package:portofolio/presentation/widget/custome_button_widget.dart';
 import 'package:portofolio/utils/responsive_util.dart';
 
@@ -64,8 +63,6 @@ class IntroductionWidget extends StatelessWidget {
                         .toList(),
                 repeatForever: true,
               ),
-              // const SizedBox(height: 20),
-              // iconSosmed(),
               const SizedBox(height: 45),
               customButton(context, 'View My Projects', navigate: true),
             ],

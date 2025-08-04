@@ -21,15 +21,15 @@ extension ResponsiveUtil on BuildContext {
   double get fontSizeTitle {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
-      return 45;
+      return 30;
     } else if (bp.isMobile) {
-      return 55;
+      return 35;
     } else if (bp.isTablet) {
-      return 60;
+      return 40;
     } else if (bp.isDesktop) {
-      return 70;
+      return 50;
     } else {
-      return 70;
+      return 50;
     }
   }
 
@@ -145,7 +145,7 @@ extension ResponsiveUtil on BuildContext {
   double get sizeImagePlayAppstore {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
-      return 30;
+      return 35;
     } else if (bp.isMobile) {
       return 35;
     } else if (bp.isTablet) {
@@ -158,10 +158,11 @@ extension ResponsiveUtil on BuildContext {
   }
 
   TextStyle get titleTextStyle {
-    return GoogleFonts.bebasNeue(
+    return GoogleFonts.inter(
       color: Color(0xFFE7E6E8),
       fontWeight: FontWeight.bold,
-      height: 0.5,
+      letterSpacing: -2,
+      // height: 0.5,
     );
   }
 

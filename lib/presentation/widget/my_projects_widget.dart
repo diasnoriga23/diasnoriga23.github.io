@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:flutter_tilt/flutter_tilt.dart';
 import 'package:portofolio/presentation/widget/custome_button_widget.dart';
 import 'package:portofolio/utils/responsive_util.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -78,22 +79,42 @@ class _MyProjectsWidgetState extends State<MyProjectsWidget> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ClipRRect(
-                        borderRadius: const BorderRadius.only(
+                      Tilt(
+                        borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(12),
                           topRight: Radius.circular(12),
                         ),
-                        child: Container(
-                          color: context.colorContainerImage,
-                          child: AspectRatio(
-                            aspectRatio: 3 / 2,
-                            child:
-                                item['image'] == ''
-                                    ? SizedBox()
-                                    : Image.asset(
-                                      item['image'],
-                                      fit: BoxFit.cover,
-                                    ),
+                        shadowConfig: ShadowConfig(disable: true),
+                        tiltConfig: TiltConfig(
+                          angle: 6.0,
+                          enableReverse: true,
+                          enableGestureHover: true,
+                          enableGestureTouch: true,
+                          enableGestureSensors: false,
+                          enableOutsideAreaMove: false,
+                          moveDuration: Duration(milliseconds: 150),
+                          leaveDuration: Duration(milliseconds: 300),
+                          moveCurve: Curves.easeOut,
+                          leaveCurve: Curves.easeOutBack,
+                        ),
+
+                        child: ClipRRect(
+                          borderRadius: const BorderRadius.only(
+                            topLeft: Radius.circular(12),
+                            topRight: Radius.circular(12),
+                          ),
+                          child: Container(
+                            color: context.colorContainerImage,
+                            child: AspectRatio(
+                              aspectRatio: 3 / 2,
+                              child:
+                                  item['image'] == ''
+                                      ? const SizedBox()
+                                      : Image.asset(
+                                        item['image'],
+                                        fit: BoxFit.cover,
+                                      ),
+                            ),
                           ),
                         ),
                       ),
@@ -120,6 +141,38 @@ class _MyProjectsWidgetState extends State<MyProjectsWidget> {
                                 style: context.subTitleTextStyle.copyWith(),
                               ),
                             ),
+                            const SizedBox(height: 10),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: Wrap(
+                                spacing: 8,
+                                runSpacing: 8,
+                                children:
+                                    (item['tag'] as List).map<Widget>((tag) {
+                                      return Container(
+                                        padding: EdgeInsets.symmetric(
+                                          vertical: 3,
+                                          horizontal: 5,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Color(0xFFB7B8BC),
+                                          ),
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                        child: Text(
+                                          tag['name'],
+                                          style:
+                                              context.subTitleTextStyle
+                                                  .copyWith(),
+                                        ),
+                                      );
+                                    }).toList(),
+                              ),
+                            ),
+
                             const SizedBox(height: 16),
                             Wrap(
                               spacing: 16,
