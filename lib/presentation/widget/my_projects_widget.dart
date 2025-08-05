@@ -141,38 +141,38 @@ class _MyProjectsWidgetState extends State<MyProjectsWidget> {
                                 style: context.subTitleTextStyle.copyWith(),
                               ),
                             ),
-                            const SizedBox(height: 10),
-                            Align(
-                              alignment: Alignment.centerLeft,
-                              child: Wrap(
-                                spacing: 8,
-                                runSpacing: 8,
-                                children:
-                                    (item['tag'] as List).map<Widget>((tag) {
-                                      return Container(
-                                        padding: EdgeInsets.symmetric(
-                                          vertical: 3,
-                                          horizontal: 5,
-                                        ),
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                            color: Color(0xFFB7B8BC),
-                                          ),
-                                          borderRadius: BorderRadius.circular(
-                                            6,
-                                          ),
-                                        ),
-                                        child: Text(
-                                          tag['name'],
-                                          style:
-                                              context.subTitleTextStyle
-                                                  .copyWith(),
-                                        ),
-                                      );
-                                    }).toList(),
-                              ),
-                            ),
 
+                            // const SizedBox(height: 10),
+                            // Align(
+                            //   alignment: Alignment.centerLeft,
+                            //   child: Wrap(
+                            //     spacing: 8,
+                            //     runSpacing: 8,
+                            //     children:
+                            //         (item['tag'] as List).map<Widget>((tag) {
+                            //           return Container(
+                            //             padding: EdgeInsets.symmetric(
+                            //               vertical: 3,
+                            //               horizontal: 5,
+                            //             ),
+                            //             decoration: BoxDecoration(
+                            //               border: Border.all(
+                            //                 color: Color(0xFFB7B8BC),
+                            //               ),
+                            //               borderRadius: BorderRadius.circular(
+                            //                 6,
+                            //               ),
+                            //             ),
+                            //             child: Text(
+                            //               tag['name'],
+                            //               style:
+                            //                   context.subTitleTextStyle
+                            //                       .copyWith(),
+                            //             ),
+                            //           );
+                            //         }).toList(),
+                            //   ),
+                            // ),
                             const SizedBox(height: 16),
                             Wrap(
                               spacing: 16,

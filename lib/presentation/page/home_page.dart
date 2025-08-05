@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portofolio/presentation/widget/aboutme_widget.dart';
+import 'package:portofolio/presentation/widget/work_experience_widget.dart';
 import 'package:portofolio/presentation/widget/footer_widget.dart';
 import 'package:portofolio/presentation/widget/introduction_widget.dart';
 import 'package:portofolio/presentation/widget/my_projects_widget.dart';
@@ -57,6 +58,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       MyProjectsWidget(),
                       TrustedCompanyWidget(),
                       AboutmeWidget(),
+                      WorkExperienceWidget(),
                       FooterWidget(),
                     ],
                   ),

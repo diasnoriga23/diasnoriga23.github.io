@@ -162,7 +162,6 @@ extension ResponsiveUtil on BuildContext {
       color: Color(0xFFE7E6E8),
       fontWeight: FontWeight.bold,
       letterSpacing: -2,
-      // height: 0.5,
     );
   }
 
