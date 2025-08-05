@@ -106,7 +106,7 @@ class _MyProjectsWidgetState extends State<MyProjectsWidget> {
                           child: Container(
                             color: context.colorContainerImage,
                             child: AspectRatio(
-                              aspectRatio: 3 / 2,
+                              aspectRatio: 4 / 3,
                               child:
                                   item['image'] == ''
                                       ? const SizedBox()

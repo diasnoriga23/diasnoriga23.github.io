@@ -7,7 +7,7 @@ class AboutmeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 150, bottom: 150),
+      margin: EdgeInsets.only(top: 150),
       child: Column(
         children: [
           Text(

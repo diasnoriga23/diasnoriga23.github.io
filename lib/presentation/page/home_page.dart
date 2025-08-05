@@ -16,6 +16,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   final ScrollController _scrollController = ScrollController();
+
   // final GlobalKey _helloKey = GlobalKey();
   // final GlobalKey _portfolioKey = GlobalKey();
   // final GlobalKey _trustCompanyKey = GlobalKey();
@@ -54,7 +55,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      IntroductionWidget(),
+                      IntroductionWidget(scrollController: _scrollController),
                       MyProjectsWidget(),
                       TrustedCompanyWidget(),
                       AboutmeWidget(),

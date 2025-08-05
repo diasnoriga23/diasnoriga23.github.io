@@ -21,6 +21,21 @@
     "appStore": "https://apps.apple.com/id/app/persib/id1240095475?l=id"
   },
   {
+    "title": "ASICS Helpdesk",
+    "image": "assets/project/asics.png",
+    "description": "Aplikasi ini adalah platform untuk internal ASICS yang dibangun dengan Flutter dan Provider. Menyediakan fitur tiket keluhan, feedback tiket.",
+    "tag": [
+            {             
+              "name": "flutter"
+            },
+            {
+              "name": "provider"
+            }
+          ],
+    "playStore": "",
+    "appStore": ""
+  }, 
+  {
     "title": "Singabret",
     "image": "assets/project/singabret.png",
     "description": "Platform presensi digital untuk PNS Kab. Subang, dibuat dengan Flutter & Provider. Pengembangan dari apps Sijawara",
@@ -38,6 +53,24 @@
     "playStore": "https://play.google.com/store/apps/details?id=id.go.subang.sijawara&hl=en",
     "appStore": ""
   },
+  {
+    "title": "SwivERP",
+    "image": "assets/project/swiverp.png",
+    "description": "Platform presensi digital untuk internal SwivERP, dibuat dengan Flutter & Provider. Fitur: presensi, pemilihan shift, notifikasi dengan websoket pusher, dan webview.",
+    "tag": [
+            {             
+              "name": "flutter"
+            },
+            {
+              "name": "provider"
+            },
+            {
+              "name": "pusher"
+            }
+          ],
+    "playStore": "",
+    "appStore": ""
+  }, 
   {
     "title": "Sijawara",
     "image": "assets/project/sijawara.png",
@@ -69,39 +102,6 @@
             }
           ],
     "playStore": "https://play.google.com/store/apps/details?id=com.setwan.presensi_dewan",
-    "appStore": ""
-  }, 
-  {
-    "title": "SwivERP",
-    "image": "",
-    "description": "Platform presensi digital untuk internal SwivERP, dibuat dengan Flutter & Provider. Fitur: presensi, pemilihan shift, notifikasi dengan websoket pusher, dan webview.",
-    "tag": [
-            {             
-              "name": "flutter"
-            },
-            {
-              "name": "provider"
-            },
-            {
-              "name": "pusher"
-            }
-          ],
-    "playStore": "",
-    "appStore": ""
-  }, 
-  {
-    "title": "ASICS Helpdesk",
-    "image": "",
-    "description": "Aplikasi ini adalah platform untuk internal ASICS yang dibangun dengan Flutter dan Provider. Menyediakan fitur tiket keluhan, feedback tiket.",
-    "tag": [
-            {             
-              "name": "flutter"
-            },
-            {
-              "name": "provider"
-            }
-          ],
-    "playStore": "",
     "appStore": ""
   }, 
   {

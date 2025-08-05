@@ -44,16 +44,9 @@ class _WorkExperienceWidgetState extends State<WorkExperienceWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 100),
+      margin: EdgeInsets.only(top: 150, bottom: 100),
       child: Column(
         children: [
-          // Text(
-          //   'Work Experience',
-          //   style: context.titleTextStyle.copyWith(
-          //     fontSize: context.fontSizeTitle,
-          //   ),
-          // ),
-          // SizedBox(height: context.heihtContentTitle),
           Container(
             margin: EdgeInsets.symmetric(horizontal: context.paddingHorizontal),
             padding: EdgeInsets.all(20),
