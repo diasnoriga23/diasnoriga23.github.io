@@ -67,7 +67,7 @@ class _WorkExperienceWidgetState extends State<WorkExperienceWidget> {
                 Text(
                   'Work Experience',
                   style: context.interTextStyle.copyWith(
-                    fontSize: 30,
+                    fontSize: context.fontContainerTitle,
                     fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.center,
@@ -75,6 +75,7 @@ class _WorkExperienceWidgetState extends State<WorkExperienceWidget> {
                 SizedBox(height: 50),
                 ListView.builder(
                   shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
                   itemCount: experiencesItem.length,
                   itemBuilder: (context, index) {
                     var experience = experiencesItem[index];

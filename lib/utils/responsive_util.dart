@@ -78,6 +78,21 @@ extension ResponsiveUtil on BuildContext {
     }
   }
 
+  double get fontContainerTitle {
+    final bp = ResponsiveBreakpoints.of(this);
+    if (bp.isPhone) {
+      return 24;
+    } else if (bp.isMobile) {
+      return 24;
+    } else if (bp.isTablet) {
+      return 24;
+    } else if (bp.isDesktop) {
+      return 30;
+    } else {
+      return 30;
+    }
+  }
+
   double get heihtContentTitle {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
