@@ -72,6 +72,21 @@
     "appStore": ""
   }, 
   {
+    "title": "Cibinong City Mall",
+    "image": "assets/project/ccm.png",
+    "description": "Aplikasi Cibinong City Mall dibuat dengan Flutter & Provider. Fitur: info promo & event terbaru, penukaran reward, direktori tenant berdasarkan lantai & kategori",
+    "tag": [
+            {             
+              "name": "flutter"
+            },
+            {
+              "name": "provider"
+            }
+          ],
+    "playStore": "",
+    "appStore": ""
+  }, 
+  {
     "title": "Sijawara",
     "image": "assets/project/sijawara.png",
     "description": "Platform presensi digital untuk PNS Kab. Subang, dibuat dengan Flutter & Provider. Fitur: presensi lokasi, validasi bawahan, TPP, dan histori kehadiran.",
@@ -104,6 +119,21 @@
     "playStore": "https://play.google.com/store/apps/details?id=com.setwan.presensi_dewan",
     "appStore": ""
   }, 
+  {
+    "title": "My Clipboard",
+    "image": "assets/project/clipboard.png",
+    "description": "Aplikasi manajemen clipboard untuk Desktop Mac, dibuat dengan Flutter. Fitur: riwayat salinan otomatis, dan antarmuka ringan yang mendukung produktivitas harian.",
+    "tag": [
+            {             
+              "name": "flutter"
+            },
+            {
+              "name": "provider"
+            }
+          ],
+    "playStore": "https://play.google.com/store/apps/details?id=com.makerindo.makerindoapp&hl=id",
+    "appStore": ""
+  },
   {
     "title": "Super App Makerindo",
     "image": "assets/project/makerindo.png",
