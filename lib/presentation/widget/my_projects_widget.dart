@@ -53,7 +53,7 @@ class _MyProjectsWidgetState extends State<MyProjectsWidget> {
       child: Column(
         children: [
           Text(
-            'MY PROJECTS',
+            'My Projects',
             style: context.titleTextStyle.copyWith(
               fontSize: context.fontSizeTitle,
             ),

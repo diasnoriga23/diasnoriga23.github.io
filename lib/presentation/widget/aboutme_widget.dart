@@ -11,7 +11,7 @@ class AboutmeWidget extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'ABOUT ME',
+            'About Me',
             style: context.titleTextStyle.copyWith(
               fontSize: context.fontSizeTitle,
             ),
