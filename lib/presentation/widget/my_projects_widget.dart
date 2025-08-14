@@ -113,6 +113,18 @@ class _MyProjectsWidgetState extends State<MyProjectsWidget> {
                                       : Image(
                                         image: AssetImage(item['image']),
                                         fit: BoxFit.cover,
+                                        loadingBuilder: (
+                                          context,
+                                          child,
+                                          loadingProgress,
+                                        ) {
+                                          if (loadingProgress == null) {
+                                            return child;
+                                          }
+                                          return const Center(
+                                            child: CircularProgressIndicator(),
+                                          );
+                                        },
                                         frameBuilder: (
                                           context,
                                           child,
@@ -128,13 +140,7 @@ class _MyProjectsWidgetState extends State<MyProjectsWidget> {
                                               milliseconds: 500,
                                             ),
                                             curve: Curves.easeOut,
-                                            child:
-                                                frame == null
-                                                    ? const Center(
-                                                      child:
-                                                          CircularProgressIndicator(),
-                                                    )
-                                                    : child,
+                                            child: child,
                                           );
                                         },
                                       ),
