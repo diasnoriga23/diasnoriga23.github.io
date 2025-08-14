@@ -120,6 +120,21 @@
     "appStore": ""
   }, 
   {
+    "title": "e-Presensi Tenaga Ahli",
+    "image": "assets/project/lkh.png",
+    "description": "e-Presensi Tenaga Ahli dibuat dengan flutter dan state management provider, aplikasi ini memiliki fitur presensi, pengisian lkh dan pengajuan izin.",
+    "tag": [
+            {             
+              "name": "flutter"
+            },
+            {
+              "name": "provider"
+            }
+          ],
+    "playStore": "",
+    "appStore": ""
+  },
+  {
     "title": "My Clipboard",
     "image": "assets/project/clipboard.png",
     "description": "Aplikasi manajemen clipboard untuk Desktop Mac, dibuat dengan Flutter. Fitur: riwayat salinan otomatis, dan antarmuka ringan yang mendukung produktivitas harian.",
@@ -131,7 +146,7 @@
               "name": "provider"
             }
           ],
-    "playStore": "https://play.google.com/store/apps/details?id=com.makerindo.makerindoapp&hl=id",
+    "playStore": "",
     "appStore": ""
   },
   {
