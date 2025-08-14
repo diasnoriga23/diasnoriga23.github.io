@@ -87,6 +87,21 @@
     "appStore": ""
   }, 
   {
+    "title": "e-Office PERPAMSI",
+    "image": "assets/project/eoffice_perpamsi.png",
+    "description": "Aplikasi e-Office PERPAMSI dibuat dengan Flutter & Provider. Fitur: laporan, laporan bulanan, surat masuk, surat keluar dan disposisi surat",
+    "tag": [
+            {             
+              "name": "flutter"
+            },
+            {
+              "name": "provider"
+            }
+          ],
+    "playStore": "",
+    "appStore": ""
+  }, 
+  {
     "title": "Sijawara",
     "image": "assets/project/sijawara.png",
     "description": "Platform presensi digital untuk PNS Kab. Subang, dibuat dengan Flutter & Provider. Fitur: presensi lokasi, validasi bawahan, TPP, dan histori kehadiran.",
