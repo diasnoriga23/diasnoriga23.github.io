@@ -28,7 +28,7 @@ class _MyProjectsWidgetState extends State<MyProjectsWidget> {
 
   Future<void> _loadJson() async {
     final String response = await rootBundle.loadString(
-      'assets/portofolio.json',
+      'assets/json/portofolio.json',
     );
     final data = json.decode(response);
     setState(() {

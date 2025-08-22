@@ -205,6 +205,6 @@ extension ResponsiveUtil on BuildContext {
   }
 
   Color get colorBackgroundFooter {
-    return Color(0xFF2C2E3D);
+    return Color(0xFF1D222E);
   }
 }

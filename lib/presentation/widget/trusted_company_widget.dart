@@ -23,7 +23,7 @@ class _TrustedCompanyWidgetState extends State<TrustedCompanyWidget> {
 
   Future<void> _loadJsonCompany() async {
     final String response = await rootBundle.loadString(
-      'assets/trustCompany.json',
+      'assets/json/trustCompany.json',
     );
     final data = json.decode(response);
     setState(() {
@@ -52,11 +52,17 @@ class _TrustedCompanyWidgetState extends State<TrustedCompanyWidget> {
               itemBuilder: (BuildContext context, int index) {
                 final item =
                     trustCompany[index % trustCompany.length]; // loop data
-                return Image.asset(
-                  item['image'],
-                  fit: BoxFit.cover,
-                  colorBlendMode: BlendMode.hardLight,
-                  width: context.sizeImageMarquee,
+                return Padding(
+                  padding: EdgeInsets.only(right: 20),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Image.asset(
+                      item['image'],
+                      fit: BoxFit.cover,
+                      colorBlendMode: BlendMode.hardLight,
+                      width: context.sizeImageMarquee,
+                    ),
+                  ),
                 );
               },
             ),

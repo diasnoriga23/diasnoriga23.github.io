@@ -25,7 +25,7 @@ class _WorkExperienceWidgetState extends State<WorkExperienceWidget> {
 
   Future<void> _loadJsonExperience() async {
     final String response = await rootBundle.loadString(
-      'assets/experience.json',
+      'assets/json/experience.json',
     );
     final data = json.decode(response);
     setState(() {
@@ -34,7 +34,9 @@ class _WorkExperienceWidgetState extends State<WorkExperienceWidget> {
   }
 
   Future<void> _loadJsonStack() async {
-    final String response = await rootBundle.loadString('assets/stack.json');
+    final String response = await rootBundle.loadString(
+      'assets/json/stack.json',
+    );
     final data = json.decode(response);
     setState(() {
       stackItem = data;

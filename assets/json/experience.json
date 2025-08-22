@@ -9,6 +9,15 @@
     "description": "Responsible for developing and maintaining various mobile applications for public services. Implemented Flutter apps integrated with Firebase and RESTful APIs to support digital transformation in the Subang regency. Worked closely with internal teams to deliver scalable, high-performance solutions."
   },
   {
+    "image": "assets/experience/visual.png",
+    "company": "Integrasi Teknologi Visual",
+    "time": "Freelance",
+    "role": "Mobile Apps Developer",
+    "tech": ["Flutter", "Dart", "Firebase", "RESTful API", "Provider"],
+    "duration": "2025 - 2026",
+    "description": "Collaborated with clients as a freelance mobile developer to design and implement cross-platform applications. Focused on optimizing performance, implementing responsive UI, and integrating Firebase services with RESTful APIs for seamless backend communication."
+  },
+  {
     "image": "assets/experience/aksii.png",
     "company": "AKSII",
     "time": "Freelance",

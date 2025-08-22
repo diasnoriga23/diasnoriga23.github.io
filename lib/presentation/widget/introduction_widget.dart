@@ -21,7 +21,7 @@ class _IntroductionWidgetState extends State<IntroductionWidget>
   List<String> phrases = [
     "Seka Diasnoriga Koswara",
     "Mobile App Developer",
-    "Freelancer",
+    "Freelance",
     "4 Years Experience",
     "Based in Sumedang",
   ];
