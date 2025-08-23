@@ -21,15 +21,15 @@ extension ResponsiveUtil on BuildContext {
   double get fontSizeTitle {
     final bp = ResponsiveBreakpoints.of(this);
     if (bp.isPhone) {
-      return 30;
+      return 26;
     } else if (bp.isMobile) {
-      return 35;
+      return 30;
     } else if (bp.isTablet) {
-      return 40;
+      return 36;
     } else if (bp.isDesktop) {
-      return 50;
+      return 46;
     } else {
-      return 50;
+      return 46;
     }
   }
 
@@ -40,11 +40,11 @@ extension ResponsiveUtil on BuildContext {
     } else if (bp.isMobile) {
       return 16;
     } else if (bp.isTablet) {
-      return 20;
+      return 18;
     } else if (bp.isDesktop) {
-      return 20;
+      return 18;
     } else {
-      return 20;
+      return 18;
     }
   }
 
@@ -175,8 +175,7 @@ extension ResponsiveUtil on BuildContext {
   TextStyle get titleTextStyle {
     return GoogleFonts.inter(
       color: Color(0xFFE7E6E8),
-      fontWeight: FontWeight.bold,
-      letterSpacing: -2,
+      fontWeight: FontWeight.w600,
     );
   }
 
