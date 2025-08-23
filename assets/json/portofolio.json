@@ -21,18 +21,21 @@
     "appStore": "https://apps.apple.com/id/app/persib/id1240095475?l=id"
   },
   {
-    "title": "ASICS Helpdesk",
-    "image": "assets/project/asics.png",
-    "description": "Aplikasi ini adalah platform untuk internal ASICS yang dibangun dengan Flutter dan Provider. Menyediakan fitur tiket keluhan, feedback tiket.",
+    "title": "SwivERP",
+    "image": "assets/project/swiverp.png",
+    "description": "Platform presensi digital untuk internal SwivERP, dibuat dengan Flutter & Provider. Fitur: presensi, pemilihan shift, notifikasi dengan websoket pusher, dan webview.",
     "tag": [
             {             
               "name": "flutter"
             },
             {
               "name": "provider"
+            },
+            {
+              "name": "pusher"
             }
           ],
-    "playStore": "",
+    "playStore": "https://play.google.com/store/apps/details?id=com.swiverp.app",
     "appStore": ""
   }, 
   {
@@ -54,21 +57,18 @@
     "appStore": ""
   },
   {
-    "title": "SwivERP",
-    "image": "assets/project/swiverp.png",
-    "description": "Platform presensi digital untuk internal SwivERP, dibuat dengan Flutter & Provider. Fitur: presensi, pemilihan shift, notifikasi dengan websoket pusher, dan webview.",
+    "title": "ASICS Helpdesk",
+    "image": "assets/project/asics.png",
+    "description": "Aplikasi ini adalah platform untuk internal ASICS yang dibangun dengan Flutter dan Provider. Menyediakan fitur tiket keluhan, feedback tiket.",
     "tag": [
             {             
               "name": "flutter"
             },
             {
               "name": "provider"
-            },
-            {
-              "name": "pusher"
             }
           ],
-    "playStore": "https://play.google.com/store/apps/details?id=com.swiverp.app",
+    "playStore": "",
     "appStore": ""
   }, 
   {
