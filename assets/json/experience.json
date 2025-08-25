@@ -5,7 +5,7 @@
     "time": "Full-time",
     "role": "Mobile Apps Developer",
     "tech": ["Flutter", "Dart", "Firebase", "RESTful API", "Provider"],
-    "duration": "2025 - Currently",
+    "duration": "Januari 2025 - Desember 2025",
     "description": "Responsible for developing and maintaining various mobile applications for public services. Implemented Flutter apps integrated with Firebase and RESTful APIs to support digital transformation in the Subang regency. Worked closely with internal teams to deliver scalable, high-performance solutions."
   },
   {
@@ -14,7 +14,7 @@
     "time": "Freelance",
     "role": "Mobile Apps Developer",
     "tech": ["Flutter", "Dart", "Firebase", "RESTful API", "Provider"],
-    "duration": "2025 - 2026",
+    "duration": "Mei 2025 - Agustus 2025",
     "description": "Collaborated with clients as a freelance mobile developer to design and implement cross-platform applications. Focused on optimizing performance, implementing responsive UI, and integrating Firebase services with RESTful APIs for seamless backend communication."
   },
   {
@@ -23,7 +23,7 @@
     "time": "Freelance",
     "role": "Mobile Apps Developer",
     "tech": ["Flutter", "Dart", "Firebase", "RESTful API", "Provider", "Bloc"],
-    "duration": "2024 - 2025",
+    "duration": "Januari 2024 - Desember 2025",
     "description": "Worked as a freelance mobile developer building cross-platform apps using Flutter. Focused on delivering robust user experiences using Bloc and Provider for state management, while integrating Firebase and RESTful APIs for backend services."
   },
   {
@@ -32,7 +32,7 @@
     "time": "Full-time",
     "role": "Mobile Apps Developer",
     "tech": ["Flutter", "Dart", "Firebase", "RESTful API", "Provider"],
-    "duration": "2024 - 2025",
+    "duration": "Januari 2024 - Desember 2025",
     "description": "Contributed to several public sector mobile applications with a focus on usability and performance. Leveraged Flutter to build modern interfaces and integrated Firebase for authentication and real-time data needs."
   },
   {
@@ -41,7 +41,7 @@
     "time": "Full-time",
     "role": "Mobile Apps Developer",
     "tech": ["Flutter", "Dart", "Firebase", "RESTful API"],
-    "duration": "2020 - 2023",
+    "duration": "Desember 2020 - Desember 2023",
     "description": "Led mobile app development efforts in building client-facing applications across various industries. Emphasized clean architecture and modular code while utilizing Flutter and Firebase to deliver fast, reliable solutions."
   }
 ]
