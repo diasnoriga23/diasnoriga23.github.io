@@ -6,6 +6,7 @@ import 'package:portofolio/presentation/widget/introduction_widget.dart';
 import 'package:portofolio/presentation/widget/my_projects_widget.dart';
 import 'package:portofolio/presentation/widget/trusted_company_widget.dart';
 import 'package:portofolio/utils/responsive_util.dart';
+import 'package:web_smooth_scroll/web_smooth_scroll.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,17 +16,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
-  final ScrollController _scrollController = ScrollController();
-
-  // final GlobalKey _helloKey = GlobalKey();
-  // final GlobalKey _portfolioKey = GlobalKey();
-  // final GlobalKey _trustCompanyKey = GlobalKey();
-  // final GlobalKey _aboutMeKey = GlobalKey();
+  late ScrollController _scrollController;
   bool isLoading = true;
 
   @override
   void initState() {
     super.initState();
+    _scrollController = ScrollController();
     _loadInitialData();
   }
 
@@ -48,20 +45,24 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 ? const Center(
                   child: CircularProgressIndicator(color: Colors.white),
                 )
-                : SingleChildScrollView(
+                : WebSmoothScroll(
+                  scrollSpeed: 2.1,
                   controller: _scrollController,
-                  physics: ClampingScrollPhysics(),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      IntroductionWidget(scrollController: _scrollController),
-                      MyProjectsWidget(),
-                      TrustedCompanyWidget(),
-                      AboutmeWidget(),
-                      WorkExperienceWidget(),
-                      FooterWidget(),
-                    ],
+                  child: SingleChildScrollView(
+                    controller: _scrollController,
+                    physics: const NeverScrollableScrollPhysics(),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        IntroductionWidget(scrollController: _scrollController),
+                        MyProjectsWidget(),
+                        TrustedCompanyWidget(),
+                        AboutmeWidget(),
+                        WorkExperienceWidget(),
+                        FooterWidget(),
+                      ],
+                    ),
                   ),
                 ),
       ),
