@@ -43,7 +43,6 @@ dependencies:
   lottie: ^3.3.1
   flutter_tilt: ^3.2.2
   timeline_tile: ^2.0.0
-  web_smooth_scroll: ^2.0.0
 
 dev_dependencies:
   flutter_test:
