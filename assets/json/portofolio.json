@@ -120,6 +120,24 @@
     "appStore": ""
   },
   {
+    "title": "Benpas 98.2 FM",
+    "image": "assets/project/benpas.png",
+    "description": "Radio BENPAS adalah radio milik Pemkab Subang yang berdiri sejak 21 Juli 1966, awalnya sebagai Radio Amatir Kodim 0605 Subang, dan kini aktif menyiarkan berbagai program dan siaran langsung.",
+    "tag": [
+            {             
+              "name": "flutter"
+            },
+            {
+              "name": "provider"
+            },
+            {
+              "name": "firebase"
+            }
+          ],
+    "playStore": "https://play.google.com/store/apps/details?id=id.go.subang.sijawara&hl=en",
+    "appStore": ""
+  },
+  {
     "title": "e-Presensi Dewan Kab. Subang",
     "image": "assets/project/dewan.png",
     "description": "Aplikasi mobile untuk Dewan Kab. Subang berbasis Flutter, menyediakan fitur presensi dinas luar, titik koordinat, histori kehadiran, dan jadwal kegiatan.",
