@@ -37,6 +37,21 @@
           ],
     "playStore": "https://play.google.com/store/apps/details?id=com.swiverp.app",
     "appStore": ""
+  },
+  {
+    "title": "Cibinong City Mall",
+    "image": "assets/project/ccm.png",
+    "description": "Aplikasi Cibinong City Mall dibuat dengan Flutter & Provider. Fitur: info promo & event terbaru, penukaran reward, direktori tenant berdasarkan lantai & kategori",
+    "tag": [
+            {             
+              "name": "flutter"
+            },
+            {
+              "name": "provider"
+            }
+          ],
+    "playStore": "https://play.google.com/store/apps/details?id=com.cibinongcitymall.apps",
+    "appStore": "https://apps.apple.com/id/app/cibinong-city-mall/id6751848172?l=id"
   }, 
   {
     "title": "Singabret",
@@ -70,21 +85,6 @@
           ],
     "playStore": "",
     "appStore": ""
-  }, 
-  {
-    "title": "Cibinong City Mall",
-    "image": "assets/project/ccm.png",
-    "description": "Aplikasi Cibinong City Mall dibuat dengan Flutter & Provider. Fitur: info promo & event terbaru, penukaran reward, direktori tenant berdasarkan lantai & kategori",
-    "tag": [
-            {             
-              "name": "flutter"
-            },
-            {
-              "name": "provider"
-            }
-          ],
-    "playStore": "https://play.google.com/store/apps/details?id=com.cibinongcitymall.apps",
-    "appStore": "https://apps.apple.com/id/app/cibinong-city-mall/id6751848172?l=id"
   }, 
   {
     "title": "e-Office PERPAMSI",
